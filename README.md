@@ -27,27 +27,25 @@ MTD and PMTD breakdown for loan statuses.
 6. Loan Distribution Analysis
 Loan trends by Month, State, Employment Length, Loan Term, Purpose, and Home Ownership.
 Filter-based analysis to drill down into specific loan characteristics (e.g., filtering by grade).
+
 Technologies Used
 SQL (PostgreSQL / MySQL)
 Data Analysis
 Query Optimization
 Data Filtering & Aggregation
+
 SQL Queries
 The project contains well-structured SQL queries that analyze loan performance, trends, and distributions. Some key queries include:
-
-sql
-Copy
-Edit
--- Total Loan Applications
+       -- Total Loan Applications
 SELECT COUNT(id) AS Total_Applications FROM bank_loan_data;
 
--- Good Loan Percentage
+       -- Good Loan Percentage
 SELECT 
     (COUNT(CASE WHEN loan_status = 'Fully Paid' OR loan_status = 'Current' THEN id END) * 100.0) / 
     COUNT(id) AS Good_Loan_Percentage
 FROM bank_loan_data;
 
--- Monthly Loan Analysis
+    -- Monthly Loan Analysis
 SELECT 
     EXTRACT(MONTH FROM issue_date) AS Month_Number, 
     COUNT(id) AS Total_Loan_Applications,
