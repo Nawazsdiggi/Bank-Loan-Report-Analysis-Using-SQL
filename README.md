@@ -53,6 +53,7 @@ SELECT
 FROM bank_loan_data
 GROUP BY EXTRACT(MONTH FROM issue_date)
 ORDER BY Month_Number;
+
 A full list of queries is available in the project repository.
 
 Conclusion
