@@ -57,12 +57,8 @@ GROUP BY EXTRACT(MONTH FROM issue_date)
 ORDER BY Month_Number;
 A full list of queries is available in the project repository.
 
-How to Use
-Clone the repository.
-Import the dataset into your SQL database.
-Run the queries in a SQL environment.
-Modify filters as needed to analyze specific trends.
 Conclusion
+This SQL project provides a comprehensive analysis of bank loan data, offering insights into loan distribution, repayment trends, and borrower behavior. The queries help stakeholders make data-driven decisions regarding loan approvals and risk assessment.
 This SQL project provides a comprehensive analysis of bank loan data, offering insights into loan distribution, repayment trends, and borrower behavior. The queries help stakeholders make data-driven decisions regarding loan approvals and risk assessment.
 
 
